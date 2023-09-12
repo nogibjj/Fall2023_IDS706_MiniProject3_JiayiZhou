@@ -1,19 +1,17 @@
-"""
-Main cli or app entry point
-"""
+"""Main function goes here"""
+import pandas as pd
+import matplotlib.pyplot as plt
 
-from mylib.calculator import add
-import click
+def describe_file(input1):
+    """define a function read a file"""
+    df1 = pd.read_csv(input1)
+    summary_statistics= df1.describe()
+    summary_html = summary_statistics.to_html("summary_statistics.html")
+    return summary_statistics, summary_html
 
-#var=1;var=2
-
-@click.command("add")
-@click.argument("a", type=int)
-@click.argument("b", type=int)
-def add_cli(a, b):
-    click.echo(add(a, b))
-
-
-if __name__ == "__main__":
-    # pylint: disable=no-value-for-parameter
-    add_cli()
+def plot_file(input1):
+    """define a function plot relationship in a dataframe"""
+    df1 = pd.read_csv(input1)
+    df1.plot(x='CAPFAC', y='PLNGENAN', kind='scatter', title="Plant Capacity Factor vs Plant Annual Net Generation")
+    # Save the plot as a figure
+    plt.savefig('plant_capacity_factor.png')
