@@ -24,7 +24,7 @@ def plot_file(input1):
     plt.xlabel("Start year of season")
     plt.ylabel("Goose Wins Above Replacement")
     # Save the plot as a figure
-    plt.savefig("plant_capacity_factor.png")
+    plt.savefig("Year vs Goose.png")
 
 
 def main():
