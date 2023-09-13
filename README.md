@@ -15,7 +15,9 @@ The dataset is loaded in by url.  Here is the url: [(https://raw.githubuserconte
 <img width="497" alt="Screenshot 2023-09-12 at 10 19 05 PM" src="https://github.com/nogibjj/Fall2023_IDS706_MiniProject3_JiayiZhou/assets/143651921/ca45cc76-2d2e-4d26-a2b5-6bff9dcaf0ee">
 
 ### Check format and test errors:
-In codespace, I run command make test, make format, and make lint. The commands run smoothly.
+In codespace, I run command make test, make format, and make lint. The commands run smoothly.  
+<img width="689" alt="Screenshot 2023-09-12 at 11 08 56 PM" src="https://github.com/nogibjj/Fall2023_IDS706_MiniProject3_JiayiZhou/assets/143651921/1ab0c925-9635-41e2-82de-8b7019f97d7e">
+
 
 ### Result
 Here is the screenshot of summary statistics table based on the csv file read in.  
