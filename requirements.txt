@@ -13,6 +13,6 @@ uvicorn==0.18.3
 #func
 pandas == 2.1.0
 matplotlib == 3.7.2
-polars
+polars == 0.19.2
 
 
